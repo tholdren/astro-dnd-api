@@ -4,7 +4,7 @@ import '../styles/global.css';
 
 // data source
 // replace temporary JSON placeholder API
-const source = 'https://jsonplaceholder.typicode.com/users';
+const source = 'https://www.dnd5eapi.co/api/2014/races';
 // fetch the data
 const res = await fetch(source); 
 // store retreived data
@@ -35,7 +35,7 @@ const data = await res.json();
 		  
 				<!-- Your API Data -->
 				{
-					data.map( item =>
+					data.results.map( item =>
 					<li class="card-item">
 						<a href="#">
 							<figure class="card">
